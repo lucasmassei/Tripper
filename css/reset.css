@@ -1,0 +1,35 @@
+body,
+h1,
+h2,
+ul,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: 'Jost';
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

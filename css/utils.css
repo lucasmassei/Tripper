@@ -1,0 +1,78 @@
+.header-main-container {
+  margin: 0px 20px;
+  padding-top: 20px;
+  max-width: 100%;
+}
+
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+.color-white {
+  color: #FDFDFD;
+}
+
+.color-green {
+  color: #40FF93;
+}
+
+.color-black {
+  color: #626262;
+}
+
+.font-jost-bold {
+  font-family: 'Jost';
+  font-weight: bold;
+}
+
+.font-jost-regular {
+  font-family: 'Jost';
+  font-weight: 400;
+}
+
+.font-roboto-bold {
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.section-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.1875em;
+}
+
+.section-title::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 4px;
+  position: relative;
+  top: 10px;
+}
+
+.section-info-subtitle {
+  font-size: 1.875em;
+  font-weight: bold;
+}
+
+.section-item-info {
+  font-size: 1.15em;
+}
+
+.padding-bottom-info {
+  padding-bottom: 30px;
+}
