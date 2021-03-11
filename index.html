@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/utils.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://kit.fontawesome.com/af722abf01.js" crossorigin="anonymous"></script>
+  <script src="js/modernizr-custom.js"></script>
   <title>Tripper</title>
 </head>
 
@@ -16,79 +17,226 @@
   <div class="background">
     <header class="menu display-flex justify-content-space-between header-main-container">
       <div class="display-flex">
-        <i class="fas fa-plane icon-plane"></i>
-        <h1 class="menu-title color-white">Tripper</h1>
+        <i class="fas fa-plane icon-plane font-size-medium color-light-gray"></i>
+        <h1 class="font-size-large color-light-gray">Tripper</h1>
       </div>
-      <nav class="menu-nav">
+      <nav class="align-self-center">
         <ul class="display-flex">
-          <li><a href="#" class="button-white color-white font-jost-bold">Home</a></li>
-          <li><a href="#" class="button-white color-white font-jost-bold">Destinos</a></li>
-          <li><a href="#" class="button-white color-white font-jost-bold">Eventos</a></li>
-          <li><a href="#" class="button-white color-white font-jost-bold">Projetos</a></li>
-          <li><a href="#" class="button-white color-white font-jost-bold">Covid-19</a></li>
-          <li><a href="#" class="button-green color-green font-jost-bold">Quero Viajar</a></li>
+          <li><a href="#" class="button-white color-light-gray font-jost-bold font-size-small">Home</a></li>
+          <li><a href="#" class="button-white color-light-gray font-jost-bold font-size-small">Eventos</a></li>
+          <li><a href="#" class="button-white color-light-gray font-jost-bold font-size-small">Projetos</a></li>
+          <li><a href="#" class="button-white color-light-gray font-jost-bold font-size-small">Covid-19</a></li>
+          <li><a href="#" class="button-green border-radius-10 color-green font-jost-bold font-size-small">Quero
+              Viajar</a></li>
         </ul>
       </nav>
     </header>
     <main class=" main display-flex justify-content-space-between header-main-container">
-      <div class="main-content">
-        <h1 class="main-title color-white">Viver a vida é essencial Aproveite com Tripper</h1>
-        <ul class="main-list color-white">
+      <div class="flex-2">
+        <div class="main-title color-light-gray">
+          <h1 class="font-size-xlarge">Viver a vida é essencial</h1>
+          <h1 class="font-size-xlarge">Aproveite com Tripper</h1>
+        </div>
+        <ul class="main-list color-light-gray font-size-small">
           <li>Encontre viagens</li>
           <li>Vá a eventos</li>
           <li>Conheça pessoas</li>
           <li>Descubra o mundo</li>
         </ul>
       </div>
-      <input class="main-input color-green" type="text" placeholder="Aonde você quer ir?">
+      <div class="main-search position-relative align-self-center display-flex flex-1">
+        <input class="main-input border-radius-10 color-green flex-2" type="text" placeholder="Aonde você quer ir?">
+        <button class="main-button position-relative align-self-center border-radius-10">
+          <i class="fas fa-search font-size-xsmall color-green"></i>
+        </button>
+      </div>
     </main>
   </div>
-  <div class="info display-flex justify-content-space-around">
-    <div class="info-item color-black font-jost-bold">
+  <div class="info position-absolute display-flex justify-content-space-around">
+    <div class="info-item font-size-xsmall color-gray font-jost-bold">
       <p>176</p>
       <p>Lugares</p>
     </div>
-    <div class="info-item color-black font-jost-bold">
+    <div class="info-item font-size-xsmall color-gray font-jost-bold">
       <p>387</p>
       <p>Hotéis</p>
     </div>
-    <div class="info-item color-black font-jost-bold">
+    <div class="info-item font-size-xsmall color-gray font-jost-bold">
       <p>12.876</p>
       <p>Viajantes</p>
     </div>
-    <div class="info-item color-black font-jost-bold">
+    <div class="info-item font-size-xsmall color-gray font-jost-bold">
       <p>20</p>
       <p>Países</p>
     </div>
   </div>
 
   <section class="section-container">
-    <h2 class="section-title-destination section-title color-black font-jost-bold">Os melhores destinos</h2>
-    <div class="section-item display-flex">
+    <h2 class="section-title-destination section-title color-gray font-jost-bold">Os melhores destinos</h2>
+    <div class="display-flex">
       <div class="section-destination-img display-flex">
-        <img class="img1-destination img-destination" src="img/first-card.webp" alt="First-Card">
-        <img class="img2-destination img-destination" src="img/first-card.webp" alt="First-Card">
-        <img class="img3-destination img-destination" src="img/first-card.webp" alt="First-Card">
+        <img class="img-side-destination position-relative img-destination border-radius-10 flex-1"
+          src="img/middle-card.webp" alt="Middle-Card">
+        <img class="img2-destination position-relative img-destination border-radius-10 flex-1"
+          src="img/middle-card.webp" alt="Middle-Card">
+        <img class="img-side-destination img3-destination position-relative img-destination border-radius-10 flex-1"
+          src="img/middle-card.webp" alt="Middle-Card">
       </div>
-      <div class="section-destination-info color-black">
-        <p class="section-info-subtitle padding-bottom-info">Vá para os destinos mais cobiçados</p>
-        <p class="section-item-info padding-bottom-info">O TRIPPER escolhe cuidadosamente os destinos. Temos parceria
+      <div class="flex-1 align-self-center color-gray">
+        <p class="section-info-subtitle padding-bottom-30-info">Vá para os destinos mais cobiçados</p>
+        <p class="section-info padding-bottom-30-info">O TRIPPER escolhe cuidadosamente os destinos. Temos parceria
           com hotéis incríveis em lugares exóticos.</p>
-        <p class="section-item-info padding-bottom-info">Você merece o melhor, por esse motivo temos uma lista ótima
+        <p class="section-info padding-bottom-30-info">Você merece o melhor, por esse motivo temos uma lista ótima
           para mostrar. <a href="#" class="color-green"> Conheça alguns dos melhores lugares.</a></p>
         <div class="display-flex justify-content-space-between">
-          <a class="section-destination-button color-white font-roboto-bold" href="#">Nova Iorque</a>
-          <a class="section-destination-button color-white font-roboto-bold" href="#">São Paulo</a>
-          <a class="section-destination-button color-white font-roboto-bold" href="#">Paris</a>
-          <a class="section-destination-button color-white font-roboto-bold" href="#">Londres</a>
-          <a class="section-destination-button color-white font-roboto-bold" href="#">Dubai</a>
+          <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold" href="#">Nova
+            Iorque</a>
+          <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold" href="#">São
+            Paulo</a>
+          <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold"
+            href="#">Paris</a>
+          <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold"
+            href="#">Londres</a>
+          <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold"
+            href="#">Dubai</a>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section-container">
-    <h2 class="section-title-events section-title color-black font-jost-bold">Os melhores eventos</h2>
+    <h2 class="section-title-events section-title color-gray font-jost-bold">Os melhores eventos</h2>
+    <div class="display-flex justify-content-space-between">
+      <div class="section-events-video">
+        <iframe class="video-events border-radius-10" src="https://www.youtube.com/embed/MMMA3mByweo" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="section-events-content flex-1 color-gray">
+        <div class="display-flex">
+          <img class="imgs-section-events border-radius-10" src="img/event-1.webp" alt="Event 1">
+          <div class="flex-1">
+            <p class="section-info-subtitle padding-bottom-30-info">Prime Options Party</p>
+            <p class="section-info  padding-bottom-30-info">Uma festa incrível com muita cerveja e gente bonita
+              curtindo um som ao ar livre e no meio da praia.</p>
+          </div>
+          <img class="imgs-section-events border-radius-10" src="img/event-2.webp" alt="Event 2">
+          <div class="flex-1">
+            <p class="section-info-subtitle padding-bottom-30-info">Colorful Sounds</p>
+            <p class="section-info  padding-bottom-30-info">Muitas cores, muito agito e muita areianessa festa no meio
+              de Dubai, com DJsdo mundo
+              todo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-projects">
+    <div class="section-container">
+      <h2 class="section-title-projects section-title color-white font-jost-bold">Nossos projetos</h2>
+      <div class="section-projects-info color-white font-roboto-regular font-size-small">
+        <p>O TRIPPER oferece projetos para os viajantes onde eles podem usar toda sua humanidade em
+          causas nobres ao redor do Globo.</p>
+        <p>E o melhor de tudo.. você pode ser recompensado por isso!</p>
+      </div>
+      <div class="display-flex justify-content-space-between">
+        <div class="section-projects-card border-radius-10 display-flex flex-column">
+          <img class="section-projects-img" src="img/projeto-1.webp" alt="Projeto 1">
+          <p
+            class="section-projects-card-status position-relative font-roboto-bold color-white font-size-too-small border-radius-10">
+            Vagas
+            esgotadas</p>
+          <div class="section-projects-card-info position-relative color-black">
+            <p class="section-projects-card-title font-roboto-bold font-size-xmedium">Teach us</p>
+            <p class="font-size-small font-roboto-regular">Sem dúvida o projeto mais procurado pornossos
+              viajantes.</p>
+            <p class="font-size-small font-roboto-regular">Você tem algum conhecimento que quercompartilhar
+              com o mundo? Aqui é o lugar certo para fazer
+              isso.</p>
+            <p class="section-projects-card-reward font-roboto-bold font-size-xsmall">Recompensa</p>
+            <p class="font-size-small font-roboto-regular">1 Ingresso para uma festa de sua escolha</p>
+          </div>
+          <a class="projects-card-button font-roboto-bold color-white font-size-small" href="#">Quero me inscrever</a>
+        </div>
+        <div class="section-projects-card border-radius-10 display-flex flex-column">
+          <img class="section-projects-img" src="img/projeto-2.webp" alt="Projeto 1">
+          <p
+            class="section-projects-card-status position-relative font-roboto-bold color-white font-size-too-small border-radius-10">
+            Disponível</p>
+          <div class="section-projects-card-info position-relative color-black">
+            <p class="section-projects-card-title font-roboto-bold font-size-xmedium">Delicious foods</p>
+            <p class="font-size-small font-roboto-regular">Se você tem boas habilidades na cozinha egosta de
+              distribuir muito amor em forma decomida, você pode cozinhar para quem precisa.</p>
+            <p class="section-projects-card-reward font-roboto-bold font-size-xsmall">Recompensa</p>
+            <p class="font-size-small font-roboto-regular">Jantar VIP em um restaurante local</p>
+          </div>
+          <a class="projects-card-button font-roboto-bold color-white font-size-small" href="#">Quero me inscrever</a>
+        </div>
+        <div class="section-projects-card border-radius-10 display-flex flex-column">
+          <img class="section-projects-img" src="img/projeto-3.webp" alt="Projeto 1">
+          <p
+            class="section-projects-card-status position-relative font-roboto-bold color-white font-size-too-small border-radius-10">
+            Disponível</p>
+          <div class="section-projects-card-info position-relative color-black">
+            <p class="section-projects-card-title font-roboto-bold font-size-xmedium">Garbage collector</p>
+            <p class="font-size-small font-roboto-regular">Se você é amante da natureza, deve odiarquando
+              alguém joga lixo no ambiente.Aqui você pode ajudar a manter as praiaslimpas e proteger nossa
+              biodiversidade.</p>
+            <p class="section-projects-card-reward font-roboto-bold font-size-xsmall">Recompensa</p>
+            <p class="font-size-small font-roboto-regular">1 Passeio de Iate durante 4 horas</p>
+          </div>
+          <a class="projects-card-button font-roboto-bold color-white font-size-small" href="#">Quero me inscrever</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-container">
+    <h2 class="section-title-covid section-title color-gray font-jost-bold">Covid-19</h2>
+    <div class="section-covid-info color-gray font-roboto-regular font-size-small">
+      <p class="padding-bottom-30-info">Estamos tomando todos os cuidados necessários para que as viagens sejam 100%
+        seguras e nossos viajantes
+        obtenham o melhor quando o assunto é higiene.</p>
+      <p>Por ora, alguns locais estão inacessíveis devido a decretos governamentais.</p>
+    </div>
+    <div class="section-covid-button display-flex justify-content-space-between">
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Nova
+        Iorque</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Tokyo</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Hong
+        Kong</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Havana</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Washington</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Chicago</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Natal</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Moçambique</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Atlanta</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Rio de
+        Janeiro</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Las
+        Vegas</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Pequim</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Bangkok</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Singapura</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Macau</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Praga</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Fortaleza</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Porto
+        Alegre</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Recife</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Meca</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Osaka</a>
+      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Shanghai</a>
+    </div>
   </section>
 </body>
 
