@@ -38,6 +38,12 @@
     color: #fff;
 }
 
+@media (max-width: 768px) {
+  .menu-nav {
+    margin-top: 10px;
+  }
+}
+
 /* Main */
 
 .main-title {
@@ -79,6 +85,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
 /* Info */
 
 .info {
@@ -91,6 +103,13 @@
 
 .info-item {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .info {
+    position: static;
+    width: 100%;
+  }
 }
 
 /* Section Destinations */
@@ -127,6 +146,38 @@
   top: -40px;
 }
 
+@media (max-width: 1052px) {
+  .section-destination {
+    flex-direction: column;
+  }
+  .section-destination-img {
+    margin-bottom: 50px;
+  }
+  .img-side-destination {
+    position: static;
+  }
+  .img2-destination {
+    position: static;
+    right: 0px;
+    margin: 0px 10px;
+  }
+}
+
+@media (max-width: 875px) {
+  .section-destination-img {
+    justify-content: center;
+    padding: 0px;
+  }
+  .img-side-destination {
+    display: none;
+  }
+  .img2-destination {
+    flex: none;
+    margin: 0px 10px;
+    align-self: center;
+  }
+}
+
 /* Section events */
 
 .section-title-events {
@@ -138,11 +189,15 @@
 }
 
 .section-events-video {
-  padding: 50px 50px 0px 0px;
+  position: relative;
+  width: 55%;
+  padding-bottom: 30.25%;
+  margin: 50px 50px 0px 0px;
 }
 
 .video-events {
-  width: 658px; 
+  position: absolute;
+  width: 100%;
   height: 352px;
   border: none;
 }
@@ -153,6 +208,28 @@
 
 .imgs-section-events {
   margin: 0px 10px 10px 0px;
+}
+
+@media (max-width: 1052px) {
+  .section-events,
+  .section-events-content-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-events-content-item {
+    text-align: center;
+  }
+  .section-events-video {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 56.25%;
+  }
+  .video-events {
+    height: 100%;
+  }
+  .imgs-section-events {
+    max-width: 248px;
+  }
 }
 
 /* Section Projects */
@@ -234,6 +311,26 @@
   background: #40FF93;
 }
 
+@media (max-width: 1052px) {
+  .section-projects {
+    padding: 50px 0px;
+    clip-path: none;
+  }
+  .section-projects-info {
+    width: 100%;
+  }
+  .section-projects-all-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-projects-card {
+    margin-bottom: 20px;
+  }
+ .section-projects-card-info {
+    text-align: center;
+  } 
+}
+
 /* Section Covid-19 */
 
 .section-title-covid {
@@ -256,6 +353,12 @@
 
 .section-covid-button .section-destination-covid-button:hover {
   background-color: #000;
+}
+
+@media (max-width: 1052px) {
+  .section-covid-info {
+    width: 100%;
+  }
 }
 
 
