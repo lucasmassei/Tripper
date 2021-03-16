@@ -33,6 +33,25 @@
   align-self: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
+.background-light-gray {
+  background-color: #FDFDFD;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-green {
+  background-color: #40FF93;
+}
+.background-gray {
+  background-color: #626262;
+}
+
 .color-light-gray {
   color: #FDFDFD;
 }
@@ -101,6 +120,10 @@
   font-size: 3em;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .section-container {
   max-width: 1315px;
   margin: 0 auto;
@@ -135,6 +158,7 @@
   background: #40FF93;
   font-size: 1em;
   padding: 10px 15px;
+  margin: 10px 5px 0px 0px;
   transition: background-color 0.5s linear 0.1s;
 }
 
@@ -156,4 +180,23 @@
 
 .position-absolute {
   position: absolute;
+}
+
+.main-register-input {
+  padding: 10px;
+  border: 1px solid #40FF93;
+}
+
+.main-register-input::-webkit-input-placeholder {
+  color: #40FF93;
+  font-family: 'Roboto';
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.main-register-input::-moz-placeholder {
+  color: #40FF93;
+  font-family: 'Roboto';
+  font-size: 1.25em;
+  font-weight: bold;
 }

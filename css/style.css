@@ -24,17 +24,15 @@
 
 .button-white:hover {
   text-shadow: 0 0 10px #000;
-  
 }
 
 .button-green{
-  background: #FDFDFD;
   padding: 5px 50px;
   transition: background-color, color, 1s, linear, 0.5s;
 }
 
 .button-green:hover {
-    background-color: #40FF93;
+    background: #40FF93;
     color: #fff;
 }
 
@@ -55,29 +53,6 @@
   line-height: 1.4em;
 }
 
-.main-search {
-  left: 30px;
-}
-
-.main-input {
-  padding: 10px;
-  border: 1px solid #40FF93;
-}
-
-.main-input::-webkit-input-placeholder {
-  color: #40FF93;
-  font-family: 'Roboto';
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.main-input::-moz-placeholder {
-  color: #40FF93;
-  font-family: 'Roboto';
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
 .main-button {
   border: none;
   padding: 0px;
@@ -88,6 +63,10 @@
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
+  }
+  .main-search {
+    align-self: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -236,7 +215,6 @@
 
 .section-projects {
   padding: 100px 0px 200px 0px;
-  background-color: #626262;
   clip-path: polygon(0 9%, 100% 0%, 100% 90%, 0 100%);
 }
 
@@ -251,7 +229,6 @@
 
 .section-projects-card {
   max-width: 345px;
-  background: #fff;
 }
 
 .section-projects-img {
@@ -269,7 +246,6 @@
 }
 
 .section-projects-card-reward {
-  text-transform: uppercase;
   padding: 10px 0px;
 }
 
@@ -280,7 +256,6 @@
 .projects-card-button {
   display: block;
   background: #405CFF;
-  text-transform: uppercase;
   text-align: center;
   padding: 20px;
   margin-top: 80px;
@@ -303,7 +278,6 @@
   left: 10px;
   width: 180px;
   text-align: center;
-  text-transform: uppercase;
   padding: 10px;
 }
 
@@ -331,11 +305,13 @@
   } 
 }
 
-/* Section Covid-19 */
-
-.section-title-covid {
-  text-transform: uppercase;
+@media (max-width: 320px) {
+  .section-projects-card-status {
+    top: -260px;
+  }
 }
+
+/* Section Covid-19 */
 
 .section-title-covid::before {
   background: #FF7A00;
@@ -346,13 +322,29 @@
 }
 
 .section-covid-button .section-destination-covid-button {
-  margin-top: 10px;
-  margin-right: 10px;
   background: #E80000;
+  margin-right: 15px;
 }
 
 .section-covid-button .section-destination-covid-button:hover {
   background-color: #000;
+}
+
+.section-covid-imgs {
+  align-items: flex-start;
+  padding: 10px 0px 50px 0px;
+}
+
+.covid-img {
+  margin: 10px auto;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+.covid-img-info {
+  text-align: center;
+  padding: 10px 0px;
+  top: -40px;
+  background: rgba(63, 66, 64, 70%);
 }
 
 @media (max-width: 1052px) {
@@ -361,6 +353,67 @@
   }
 }
 
+/* Section Register */
+
+.section-title-register::before {
+  background: #fff;
+}
+
+.section-register-info {
+  width: 55%;
+}
+.section-register-input {
+  margin: 10px 20px 0px 0px;
+}
+
+.section-register-input-submit {
+  max-width: 100%;
+  margin: 50px 0px;
+  padding: 10px 200px;
+  box-shadow: 0 2px 5px 2px #40FF93;
+  cursor: pointer;
+  transition: box-shadow, 0.3s linear 0.2s;
+}
+
+.section-register-input-submit:hover {
+  box-shadow: none;
+}
+
+@media (max-width: 1052px) {
+  .section-register-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-register-input-submit {
+    padding: 10px 100px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px 0px;
+}
+
+.footer-content-logo {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content-info {
+    flex-direction: column;
+  }
+}
 
 
 
