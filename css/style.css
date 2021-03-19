@@ -1,9 +1,14 @@
 .background {
-  background: url(../img/home-banner.webp) no-repeat;
-  background-color: #40FF93;
   background-blend-mode: darken;
-  background-position: center;
   background-size: cover;
+}
+
+.webp .background {
+  background: #40FF93 url(../img/home-banner.webp) no-repeat center;
+}
+
+.no-webp .background {
+  background: #40FF93 url(../img/home-banner.jpg) no-repeat center;
 }
 
 /* Menu */
@@ -11,37 +16,30 @@
 .icon-plane {
   padding: 5px 5px;
   transform: rotate(320deg);
+  font-size: 1.875em;
 }
 
 .fas {
   line-height: normal;
 }
 
-.button-white {
+.btn-nav {
   padding: 0px 5px;
   margin: 0px 5px;
 }
 
-.button-white:hover {
+.btn-nav:hover {
   text-shadow: 0 0 10px #000;
-  
 }
 
-.button-green{
-  background: #FDFDFD;
+.btn-cta {
   padding: 5px 50px;
   transition: background-color, color, 1s, linear, 0.5s;
 }
 
-.button-green:hover {
+.btn-cta:hover {
     background-color: #40FF93;
     color: #fff;
-}
-
-@media (max-width: 768px) {
-  .menu-nav {
-    margin-top: 10px;
-  }
 }
 
 /* Main */
@@ -55,40 +53,11 @@
   line-height: 1.4em;
 }
 
-.main-search {
-  left: 30px;
-}
-
-.main-input {
-  padding: 10px;
-  border: 1px solid #40FF93;
-}
-
-.main-input::-webkit-input-placeholder {
-  color: #40FF93;
-  font-family: 'Roboto';
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.main-input::-moz-placeholder {
-  color: #40FF93;
-  font-family: 'Roboto';
-  font-size: 1.25em;
-  font-weight: bold;
-}
-
-.main-button {
+.main-search-input-button {
   border: none;
   padding: 0px;
-  right: 30px;
+  right: 10px;
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .main {
-    flex-direction: column;
-  }
 }
 
 /* Info */
@@ -103,13 +72,6 @@
 
 .info-item {
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  .info {
-    position: static;
-    width: 100%;
-  }
 }
 
 /* Section Destinations */
@@ -129,7 +91,6 @@
 
 .img-side-destination {
   top: 40px;
-  transition: top 0.5s linear 0.5s;
 }
 
 .img2-destination {
@@ -142,40 +103,8 @@
 }
 
 .img-side-destination:hover {
+  transform: translateY(-80px);
   z-index: 2;
-  top: -40px;
-}
-
-@media (max-width: 1052px) {
-  .section-destination {
-    flex-direction: column;
-  }
-  .section-destination-img {
-    margin-bottom: 50px;
-  }
-  .img-side-destination {
-    position: static;
-  }
-  .img2-destination {
-    position: static;
-    right: 0px;
-    margin: 0px 10px;
-  }
-}
-
-@media (max-width: 875px) {
-  .section-destination-img {
-    justify-content: center;
-    padding: 0px;
-  }
-  .img-side-destination {
-    display: none;
-  }
-  .img2-destination {
-    flex: none;
-    margin: 0px 10px;
-    align-self: center;
-  }
 }
 
 /* Section events */
@@ -210,33 +139,10 @@
   margin: 0px 10px 10px 0px;
 }
 
-@media (max-width: 1052px) {
-  .section-events,
-  .section-events-content-item {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-events-content-item {
-    text-align: center;
-  }
-  .section-events-video {
-    width: 100%;
-    margin: 0px;
-    padding-bottom: 56.25%;
-  }
-  .video-events {
-    height: 100%;
-  }
-  .imgs-section-events {
-    max-width: 248px;
-  }
-}
-
 /* Section Projects */
 
 .section-projects {
   padding: 100px 0px 200px 0px;
-  background-color: #626262;
   clip-path: polygon(0 9%, 100% 0%, 100% 90%, 0 100%);
 }
 
@@ -251,7 +157,6 @@
 
 .section-projects-card {
   max-width: 345px;
-  background: #fff;
 }
 
 .section-projects-img {
@@ -261,7 +166,6 @@
 
 .section-projects-card-info {
   padding: 0px 10px;
-  top: -40px;
 }
 
 .section-projects-card-title {
@@ -269,7 +173,6 @@
 }
 
 .section-projects-card-reward {
-  text-transform: uppercase;
   padding: 10px 0px;
 }
 
@@ -279,8 +182,7 @@
 
 .projects-card-button {
   display: block;
-  background: #405CFF;
-  text-transform: uppercase;
+  background-color: #405CFF;
   text-align: center;
   padding: 20px;
   margin-top: 80px;
@@ -299,43 +201,19 @@
 
 .section-projects-card-status {
   background: #E80000;
-  top: -280px;
-  left: 10px;
-  width: 180px;
   text-align: center;
-  text-transform: uppercase;
-  padding: 10px;
+  top: 10px;
+  left: 10px;
+  padding: 10px 40px;
+  font-size: 0.825em;
 }
 
 .section-projects-card:nth-child(n + 2) .section-projects-card-status {
   background: #40FF93;
-}
-
-@media (max-width: 1052px) {
-  .section-projects {
-    padding: 50px 0px;
-    clip-path: none;
-  }
-  .section-projects-info {
-    width: 100%;
-  }
-  .section-projects-all-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .section-projects-card {
-    margin-bottom: 20px;
-  }
- .section-projects-card-info {
-    text-align: center;
-  } 
+  padding: 10px 30px;
 }
 
 /* Section Covid-19 */
-
-.section-title-covid {
-  text-transform: uppercase;
-}
 
 .section-title-covid::before {
   background: #FF7A00;
@@ -345,24 +223,73 @@
   width: 45%;
 }
 
-.section-covid-button .section-destination-covid-button {
-  margin-top: 10px;
-  margin-right: 10px;
+.section-covid-button {
   background: #E80000;
+  margin-right: 15px;
 }
 
 .section-covid-button .section-destination-covid-button:hover {
   background-color: #000;
 }
 
-@media (max-width: 1052px) {
-  .section-covid-info {
-    width: 100%;
-  }
+.section-covid-imgs {
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 50px;
 }
 
+.covid-img {
+  margin: 10px auto;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
 
+.covid-img-info {
+  text-align: center;
+  padding: 10px 0px;
+  top: -40px;
+  background-color: rgba(63, 66, 64, 70%);
+}
 
+/* Section Register */
 
+.section-title-register::before {
+  background: #fff;
+}
 
+.section-register-info {
+  width: 55%;
+}
+.section-register-input {
+ margin-top: 10px;
+}
 
+.section-register-input:nth-child(n + 2) {
+  margin-left: 20px;
+}
+
+.section-register-input-submit {
+  width: 50%;
+  margin: 50px 0px;
+  padding: 10px 0px;
+  box-shadow: 0 2px 5px 2px #40FF93;
+  cursor: pointer;
+  transition: box-shadow, 0.3s linear 0s;
+}
+
+.section-register-input-submit:hover {
+  box-shadow: 0 2px 10px 4px #40FF93;
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px 0px;
+}
+
+.footer-content-logo {
+  margin-right: 10px;
+}
+
+.footer-icon {
+  margin-right: 5px;
+}

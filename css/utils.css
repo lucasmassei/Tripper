@@ -10,6 +10,8 @@
 }
 
 .flex-column {
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -21,16 +23,35 @@
   flex: 2;
 }
 
-.justify-content-space-between {
+.justify-between {
   justify-content: space-between;
 }
 
-.justify-content-space-around {
+.justify-around {
   justify-content: space-around;
 }
 
 .align-self-center {
   align-self: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.background-light-gray {
+  background-color: #FDFDFD;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.background-green {
+  background-color: #40FF93;
+}
+.background-gray {
+  background-color: #626262;
 }
 
 .color-light-gray {
@@ -73,32 +94,28 @@
   font-weight: 400;
 }
 
-.font-size-too-small {
-  font-size: 0.825em;
-}
-
-.font-size-small {
+.font-size-xs {
   font-size: 1.125em;
 }
 
-.font-size-xsmall {
+.font-size-sm {
   font-size: 1.25em;
 }
 
-.font-size-medium {
-  font-size: 1.875em;
-}
-
-.font-size-xmedium {
+.font-size-md {
   font-size: 2em;
 }
 
-.font-size-large {
+.font-size-lg {
   font-size: 2.25em;
 }
 
-.font-size-xlarge {
+.font-size-xl {
   font-size: 3em;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .section-container {
@@ -133,8 +150,8 @@
 
 .section-destination-covid-button {
   background: #40FF93;
-  font-size: 1em;
   padding: 10px 15px;
+  margin: 10px 5px 0px 0px;
   transition: background-color 0.5s linear 0.1s;
 }
 
@@ -142,7 +159,7 @@
   background-color: #000;
 }
 
-.padding-bottom-30-info {
+.padding-bottom-30 {
   padding-bottom: 30px;
 }
 
@@ -156,4 +173,23 @@
 
 .position-absolute {
   position: absolute;
+}
+
+.main-register-input {
+  padding: 10px;
+  border: 1px solid #40FF93;
+}
+
+.main-register-input::-webkit-input-placeholder {
+  color: #40FF93;
+  font-family: 'Roboto';
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.main-register-input::-moz-placeholder {
+  color: #40FF93;
+  font-family: 'Roboto';
+  font-size: 1.25em;
+  font-weight: bold;
 }

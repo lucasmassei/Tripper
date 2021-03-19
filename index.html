@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/utils.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media.css">
   <script src="https://kit.fontawesome.com/af722abf01.js" crossorigin="anonymous"></script>
   <script src="js/modernizr-custom.js"></script>
   <title>Tripper</title>
@@ -15,62 +16,62 @@
 
 <body>
   <div class="background">
-    <header class="display-flex justify-content-space-between header-main-container">
+    <header class="display-flex justify-between header-main-container">
       <div class="display-flex">
-        <i class="fas fa-plane icon-plane font-size-medium color-light-gray"></i>
-        <h1 class="font-size-large color-light-gray">Tripper</h1>
+        <i class="fas fa-plane icon-plane font-size-md color-light-gray"></i>
+        <h1 class="font-size-lg color-light-gray">Tripper</h1>
       </div>
       <nav class="align-self-center">
         <ul class="display-flex">
-          <li class="menu-nav"><a href="#" class="button-white color-light-gray font-jost-bold font-size-small">Home</a>
+          <li class="menu-nav"><a href="#" class="btn-nav color-light-gray font-jost-bold font-size-xs">Home</a>
+          </li>
+          <li class="menu-nav"><a href="#" class="btn-nav color-light-gray font-jost-bold font-size-xs">Eventos</a></li>
+          <li class="menu-nav"><a href="#" class="btn-nav color-light-gray font-jost-bold font-size-xs">Projetos</a>
+          </li>
+          <li class="menu-nav"><a href="#" class="btn-nav color-light-gray font-jost-bold font-size-xs">Covid-19</a>
           </li>
           <li class="menu-nav"><a href="#"
-              class="button-white color-light-gray font-jost-bold font-size-small">Eventos</a></li>
-          <li class="menu-nav"><a href="#"
-              class="button-white color-light-gray font-jost-bold font-size-small">Projetos</a></li>
-          <li class="menu-nav"><a href="#"
-              class="button-white color-light-gray font-jost-bold font-size-small">Covid-19</a></li>
-          <li class="menu-nav"><a href="#"
-              class="button-green border-radius-10 color-green font-jost-bold font-size-small">Quero
-              Viajar</a></li>
+              class="btn-cta background-light-gray border-radius-10 color-green font-jost-bold font-size-xs">Quero
+              viajar</a></li>
         </ul>
       </nav>
     </header>
-    <main class="main display-flex justify-content-space-between header-main-container">
+    <main class="display-flex justify-between header-main-container">
       <div class="flex-2">
         <div class="main-title color-light-gray">
-          <h1 class="font-size-xlarge">Viver a vida é essencial</h1>
-          <h1 class="font-size-xlarge">Aproveite com Tripper</h1>
+          <h1 class="font-size-xl">Viver a vida é essencial</h1>
+          <h1 class="font-size-xl">Aproveite com Tripper</h1>
         </div>
-        <ul class="main-list color-light-gray font-size-small">
+        <ul class="main-list color-light-gray font-size-xs">
           <li>Encontre viagens</li>
           <li>Vá a eventos</li>
           <li>Conheça pessoas</li>
           <li>Descubra o mundo</li>
         </ul>
       </div>
-      <div class="main-search position-relative align-self-center display-flex flex-1">
-        <input class="main-input border-radius-10 color-green flex-2" type="text" placeholder="Aonde você quer ir?">
-        <button class="main-button position-relative align-self-center border-radius-10">
-          <i class="fas fa-search font-size-xsmall color-green"></i>
+      <div class="main-search align-self-center display-flex flex-1 position-relative">
+        <input class="main-register-input border-radius-10 color-green flex-2" type="text"
+          placeholder="Aonde você quer ir?">
+        <button class="main-search-input-button background-white position-absolute align-self-center border-radius-10">
+          <i class="fas fa-search font-size-sm color-green"></i>
         </button>
       </div>
     </main>
   </div>
-  <div class="info position-absolute display-flex justify-content-space-around">
-    <div class="info-item font-size-xsmall color-gray font-jost-bold">
+  <div class="info position-absolute display-flex justify-around">
+    <div class="info-item font-size-sm color-gray font-jost-bold">
       <p>176</p>
       <p>Lugares</p>
     </div>
-    <div class="info-item font-size-xsmall color-gray font-jost-bold">
+    <div class="info-item font-size-sm color-gray font-jost-bold">
       <p>387</p>
       <p>Hotéis</p>
     </div>
-    <div class="info-item font-size-xsmall color-gray font-jost-bold">
+    <div class="info-item font-size-sm color-gray font-jost-bold">
       <p>12.876</p>
       <p>Viajantes</p>
     </div>
-    <div class="info-item font-size-xsmall color-gray font-jost-bold">
+    <div class="info-item font-size-sm color-gray font-jost-bold">
       <p>20</p>
       <p>Países</p>
     </div>
@@ -80,20 +81,32 @@
     <h2 class="section-title-destination section-title color-gray font-jost-bold">Os melhores destinos</h2>
     <div class="section-destination display-flex">
       <div class="section-destination-img display-flex">
-        <img class="img-side-destination position-relative img-destination border-radius-10 flex-1"
-          src="img/middle-card.webp" alt="Middle-Card">
-        <img class="img2-destination position-relative img-destination border-radius-10 flex-1"
-          src="img/middle-card.webp" alt="Middle-Card">
-        <img class="img-side-destination img3-destination position-relative img-destination border-radius-10 flex-1"
-          src="img/middle-card.webp" alt="Middle-Card">
+        <picture>
+          <source srcset="img/middle-card.webp" type="image/webp">
+          <source srcset="img/middle-card.png" type="image/png">
+          <img class="img-side-destination position-relative img-destination border-radius-10 flex-1"
+            src="img/middle-card.png" alt="Middle-Card">
+        </picture>
+        <picture>
+          <source srcset="img/middle-card.webp" type="image/webp">
+          <source srcset="img/middle-card.webp" type="image/png">
+          <img class="img2-destination position-relative img-destination border-radius-10 flex-1"
+            src="img/middle-card.webp" alt="Middle-Card">
+        </picture>
+        <picture>
+          <source srcset="img/middle-card.webp" type="image/webp">
+          <source srcset="img/middle-card.webp" type="image/png">
+          <img class="img-side-destination img3-destination position-relative img-destination border-radius-10 flex-1"
+            src="img/middle-card.webp" alt="Middle-Card">
+        </picture>
       </div>
       <div class="flex-1 align-self-center color-gray">
-        <p class="section-info-subtitle padding-bottom-30-info">Vá para os destinos mais cobiçados</p>
-        <p class="section-info padding-bottom-30-info">O TRIPPER escolhe cuidadosamente os destinos. Temos parceria
+        <p class="section-info-subtitle padding-bottom-30">Vá para os destinos mais cobiçados</p>
+        <p class="section-info padding-bottom-30">O TRIPPER escolhe cuidadosamente os destinos. Temos parceria
           com hotéis incríveis em lugares exóticos.</p>
-        <p class="section-info padding-bottom-30-info">Você merece o melhor, por esse motivo temos uma lista ótima
+        <p class="section-info padding-bottom-30">Você merece o melhor, por esse motivo temos uma lista ótima
           para mostrar. <a href="#" class="color-green"> Conheça alguns dos melhores lugares.</a></p>
-        <div class="display-flex justify-content-space-between">
+        <div class="display-flex justify-between">
           <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold" href="#">Nova
             Iorque</a>
           <a class="section-destination-covid-button border-radius-10 color-light-gray font-roboto-bold" href="#">São
@@ -111,7 +124,7 @@
 
   <section class="section-container">
     <h2 class="section-title-events section-title color-gray font-jost-bold">Os melhores eventos</h2>
-    <div class="section-events display-flex justify-content-space-between">
+    <div class="section-events display-flex justify-between">
       <div class="section-events-video">
         <iframe class="video-events border-radius-10" src="https://www.youtube.com/embed/t6x8EzloiXU" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -119,16 +132,24 @@
       </div>
       <div class="section-events-content flex-1 color-gray">
         <div class="section-events-content-item display-flex">
-          <img class="imgs-section-events border-radius-10" src="img/event-1.webp" alt="Event 1">
+          <picture>
+            <source srcset="img/event-1.webp" type="image/webp">
+            <source srcset="img/event-1.png" type="image/png">
+            <img class="imgs-section-events border-radius-10" src="img/event-1.png" alt="Event 1">
+          </picture>
           <div class="flex-1">
-            <p class="section-info-subtitle padding-bottom-30-info">Prime Options Party</p>
-            <p class="section-info padding-bottom-30-info">Uma festa incrível com muita cerveja e gente bonita
+            <p class="section-info-subtitle padding-bottom-30">Prime Options Party</p>
+            <p class="section-info padding-bottom-30">Uma festa incrível com muita cerveja e gente bonita
               curtindo um som ao ar livre e no meio da praia.</p>
           </div>
-          <img class="imgs-section-events border-radius-10" src="img/event-2.webp" alt="Event 2">
+          <picture>
+            <source srcset="img/event-2.webp" type="image/webp">
+            <source srcset="img/event-2.png" type="image/png">
+            <img class="imgs-section-events border-radius-10" src="img/event-2.png" alt="Event 2">
+          </picture>
           <div class="flex-1">
-            <p class="section-info-subtitle padding-bottom-30-info">Colorful Sounds</p>
-            <p class="section-info padding-bottom-30-info">Muitas cores, muito agito e muita areianessa festa no meio
+            <p class="section-info-subtitle padding-bottom-30">Colorful Sounds</p>
+            <p class="section-info padding-bottom-30">Muitas cores, muito agito e muita areianessa festa no meio
               de Dubai, com DJs do mundo
               todo.</p>
           </div>
@@ -137,115 +158,227 @@
     </div>
   </section>
 
-  <section class="section-projects">
+  <section class="section-projects background-gray">
     <div class="section-container">
       <h2 class="section-title-projects section-title color-white font-jost-bold">Nossos projetos</h2>
-      <div class="section-projects-info color-white font-roboto-regular font-size-small">
+      <div class="section-projects-info color-white font-roboto-regular font-size-xs">
         <p>O TRIPPER oferece projetos para os viajantes onde eles podem usar toda sua humanidade em
           causas nobres ao redor do Globo.</p>
         <p>E o melhor de tudo.. você pode ser recompensado por isso!</p>
       </div>
-      <div class="section-projects-all-cards display-flex justify-content-space-between">
-        <div class="section-projects-card border-radius-10 display-flex flex-column">
-          <img class="section-projects-img" src="img/projeto-1.webp" alt="Projeto 1">
+      <div class="section-projects-all-cards display-flex justify-between">
+        <article class="section-projects-card position-relative background-white border-radius-10 flex-column">
+          <picture>
+            <source srcset="img/projeto-1.webp" type="image/webp">
+            <source srcset="img/projeto-1.png" type="image/png">
+            <img class="section-projects-img" src="img/projeto-1.png" alt="Projeto 1">
+          </picture>
           <p
-            class="section-projects-card-status position-relative font-roboto-bold color-white font-size-too-small border-radius-10">
+            class="section-projects-card-status position-absolute font-roboto-bold color-white font-size-too-small border-radius-10 text-uppercase">
             Vagas
             esgotadas</p>
-          <div class="section-projects-card-info position-relative color-black">
-            <p class="section-projects-card-title font-roboto-bold font-size-xmedium">Teach us</p>
-            <p class="font-size-small font-roboto-regular">Sem dúvida o projeto mais procurado pornossos
+          <div class="section-projects-card-info color-black">
+            <h3 class="section-projects-card-title font-roboto-bold font-size-md">Teach us</h3>
+            <p class="font-size-xs font-roboto-regular">Sem dúvida o projeto mais procurado por nossos
               viajantes.</p>
-            <p class="font-size-small font-roboto-regular">Você tem algum conhecimento que quercompartilhar
+            <p class="font-size-xs font-roboto-regular">Você tem algum conhecimento que quer compartilhar
               com o mundo? Aqui é o lugar certo para fazer
               isso.</p>
-            <p class="section-projects-card-reward font-roboto-bold font-size-xsmall">Recompensa</p>
-            <p class="font-size-small font-roboto-regular">1 Ingresso para uma festa
+            <p class="section-projects-card-reward font-roboto-bold font-size-sm text-uppercase">Recompensa</p>
+            <p class="font-size-xs font-roboto-regular">1 Ingresso para uma festa
               de sua escolha</p>
           </div>
-          <a class="projects-card-button font-roboto-bold color-white font-size-small" href="#">Quero me inscrever</a>
-        </div>
-        <div class="section-projects-card border-radius-10 display-flex flex-column">
-          <img class="section-projects-img" src="img/projeto-2.webp" alt="Projeto 1">
+          <a class="projects-card-button font-roboto-bold color-white font-size-xs text-uppercase" href="#">Quero me
+            inscrever</a>
+        </article>
+        <article class="section-projects-card position-relative background-white border-radius-10 flex-column">
+          <picture>
+            <source srcset="img/projeto-2.webp" type="image/webp">
+            <source srcset="img/projeto-2.png" type="image/png">
+            <img class="section-projects-img" src="img/projeto-2.png" alt="Projeto 2">
+          </picture>
           <p
-            class="section-projects-card-status position-relative font-roboto-bold color-white font-size-too-small border-radius-10">
+            class="section-projects-card-status position-absolute font-roboto-bold color-white font-size-too-small border-radius-10 text-uppercase">
             Disponível</p>
-          <div class="section-projects-card-info position-relative color-black">
-            <p class="section-projects-card-title font-roboto-bold font-size-xmedium">Delicious foods</p>
-            <p class="font-size-small font-roboto-regular">Se você tem boas habilidades na cozinha egosta de
-              distribuir muito amor em forma decomida, você pode cozinhar para quem precisa.</p>
-            <p class="section-projects-card-reward font-roboto-bold font-size-xsmall">Recompensa</p>
-            <p class="font-size-small font-roboto-regular">Jantar VIP em um
+          <div class="section-projects-card-info color-black">
+            <h3 class="section-projects-card-title font-roboto-bold font-size-md">Delicious foods</h3>
+            <p class="font-size-xs font-roboto-regular">Se você tem boas habilidades na cozinha e gosta de
+              distribuir muito amor em forma de comida, você pode cozinhar para quem precisa.</p>
+            <p class="section-projects-card-reward font-roboto-bold font-size-sm text-uppercase">Recompensa</p>
+            <p class="font-size-xs font-roboto-regular">Jantar VIP em um
               restaurante local</p>
           </div>
-          <a class="projects-card-button font-roboto-bold color-white font-size-small" href="#">Quero me inscrever</a>
-        </div>
-        <div class="section-projects-card border-radius-10 display-flex flex-column">
-          <img class="section-projects-img" src="img/projeto-3.webp" alt="Projeto 1">
+          <a class="projects-card-button font-roboto-bold color-white font-size-xs text-uppercase" href="#">Quero me
+            inscrever</a>
+        </article>
+        <article class="section-projects-card position-relative background-white border-radius-10 flex-column">
+          <picture>
+            <source srcset="img/projeto-3.webp" type="image/webp">
+            <source srcset="img/projeto-3.png" type="image/png">
+            <img class="section-projects-img" src="img/projeto-3.png" alt="Projeto 3">
+          </picture>
           <p
-            class="section-projects-card-status position-relative font-roboto-bold color-white font-size-too-small border-radius-10">
+            class="section-projects-card-status position-absolute font-roboto-bold color-white font-size-too-small border-radius-10 text-uppercase">
             Disponível</p>
-          <div class="section-projects-card-info position-relative color-black">
-            <p class="section-projects-card-title font-roboto-bold font-size-xmedium">Garbage collector</p>
-            <p class="font-size-small font-roboto-regular">Se você é amante da natureza, deve odiarquando
-              alguém joga lixo no ambiente.Aqui você pode ajudar a manter as praiaslimpas e proteger nossa
+          <div class="section-projects-card-info color-black">
+            <h3 class="section-projects-card-title font-roboto-bold font-size-md">Garbage collector</h3>
+            <p class="font-size-xs font-roboto-regular">Se você é amante da natureza, deve odiar quando
+              alguém joga lixo no ambiente.Aqui você pode ajudar a manter as praias limpas e proteger nossa
               biodiversidade.</p>
-            <p class="section-projects-card-reward font-roboto-bold font-size-xsmall">Recompensa</p>
-            <p class="font-size-small font-roboto-regular">1 Passeio de Iate durante 4
+            <p class="section-projects-card-reward font-roboto-bold font-size-sm text-uppercase">Recompensa</p>
+            <p class="font-size-xs font-roboto-regular">1 Passeio de Iate durante 4
               horas</p>
           </div>
-          <a class="projects-card-button font-roboto-bold color-white font-size-small" href="#">Quero me inscrever</a>
-        </div>
+          <a class="projects-card-button font-roboto-bold color-white font-size-xs text-uppercase" href="#">Quero me
+            inscrever</a>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section-container">
-    <h2 class="section-title-covid section-title color-gray font-jost-bold">Covid-19</h2>
-    <div class="section-covid-info color-gray font-roboto-regular font-size-small">
-      <p class="padding-bottom-30-info">Estamos tomando todos os cuidados necessários para que as viagens sejam 100%
+    <h2 class="section-title-covid text-uppercase section-title color-gray font-jost-bold">Covid-19</h2>
+    <div class="section-covid-info color-gray font-roboto-regular font-size-xs">
+      <p class="padding-bottom-30">Estamos tomando todos os cuidados necessários para que as viagens sejam 100%
         seguras e nossos viajantes
         obtenham o melhor quando o assunto é higiene.</p>
       <p>Por ora, alguns locais estão inacessíveis devido a decretos governamentais.</p>
     </div>
-    <div class="section-covid-button display-flex justify-content-space-between">
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Nova
+    <div class="display-flex justify-between padding-bottom-30">
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Nova
         Iorque</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Tokyo</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Hong
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Tokyo</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Hong
         Kong</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Havana</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Havana</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Washington</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Chicago</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Natal</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Natal</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Moçambique</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Atlanta</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Rio de
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Rio de
         Janeiro</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Las
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Las
         Vegas</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Pequim</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Pequim</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Bangkok</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Singapura</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Macau</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Praga</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Macau</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Praga</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Fortaleza</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Porto
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Porto
         Alegre</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Recife</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Meca</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10" href="#">Osaka</a>
-      <a class="section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Recife</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Meca</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
+        href="#">Osaka</a>
+      <a class="section-covid-button section-destination-covid-button color-light-gray font-roboto-bold border-radius-10"
         href="#">Shanghai</a>
     </div>
+    <p class="section-covid-info color-gray font-roboto-regular font-size-xs">Apesar da
+      situação, nossa equipe se
+      mantém forte.</p>
+    <div class="section-covid-imgs display-flex justify-between">
+      <div class="covid-img">
+        <picture>
+          <source srcset="img/plano-de-saude-para-medico-landscape.webp" type="image/webp">
+          <source srcset="img/plano-de-saude-para-medico-landscape.png" type="image/png">
+          <img src="img/plano-de-saude-para-medico-landscape.png" alt="Plano de Saude">
+        </picture>
+        <p class="covid-img-info position-relative color-white font-roboto-bod font-size-xs">Equipe médica altamente
+          qualificada</p>
+      </div>
+      <picture>
+        <source srcset="img/cuidados-necessarios.webp" type="image/webp">
+        <source srcset="img/cuidados-necessarios.png" type="image/png">
+        <img class="covid-img" src="img/cuidados-necessarios.png" alt="Cuidados Necessários">
+      </picture>
+      <picture>
+        <source srcset="img/respeito-a-quarentena.webp" type="image/webp">
+        <source srcset="img/respeito-a-quarentena.png" type="image/png">
+        <img class="covid-img" src="img/respeito-a-quarentena.png" alt="Respeito a Quarentena">
+      </picture>
+      <picture>
+        <source srcset="img/alcool.webp" type="image/webp">
+        <source srcset="img/alcool.png" type="image/png">
+        <img class="covid-img" src="img/alcool.png" alt="Álcool">
+      </picture>
+      <picture>
+        <source srcset="img/testings.webp" type="image/webp">
+        <source srcset="img/testings.png" type="image/png">
+        <img class="covid-img" src="img/testings.png" alt="Testes">
+      </picture>
+      <picture>
+        <source srcset="img/vacina.webp" type="image/webp">
+        <source srcset="img/vacina.png" type="image/png">
+        <img class="covid-img" src="img/vacina.png" alt="Vacina">
+      </picture>
+    </div>
   </section>
+
+  <section class="background-gray">
+    <div class="section-container">
+      <h2 class="section-title-register section-title color-white font-jost-bold">Quero Viajar</h2>
+      <p class="section-register-info color-white font-roboto-regular font-size-xs padding-bottom-30">Preencha o
+        formulário para receber nossas newsletters, destinos e viagens que estão prestes a acontecer.</p>
+      <form class="flex-column">
+        <div class="display-flex">
+          <input class="section-register-input flex-1 main-register-input border-radius-10 color-green" type="text"
+            placeholder="Nome completo">
+          <input class="section-register-input flex-1 main-register-input border-radius-10 color-green" type="email"
+            placeholder="E-mail">
+        </div>
+        <div class="display-flex">
+          <input class="section-register-input flex-1 main-register-input border-radius-10 color-green" type="text"
+            placeholder="Data de nascimento">
+          <input class="section-register-input flex-1 main-register-input border-radius-10 color-green" type="tel"
+            placeholder="Telefone">
+        </div>
+        <input
+          class="section-register-input-submit background-green flex-1 align-self-center main-register-input border-radius-10 color-white font-jost-bold font-size-xs text-uppercase"
+          type="submit" placeholder="Enviar">
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer background-green">
+    <div class="section-container">
+      <div class="footer-content display-flex justify-between align-items-center">
+        <div class="footer-content-info display-flex align-items-center">
+          <i class="fas fa-plane icon-plane font-size-sm color-light-gray"></i>
+          <h1 class="footer-content-logo font-size-sm color-light-gray">Tripper</h1>
+          <p class="font-jost-bold font-size-sm color-light-gray">- Todos os direitos reservados</p>
+        </div>
+        <address class="font-jost-bold font-size-sm color-light-gray">Av. Miguel Salmão 1455, sala 1105
+        </address>
+        <div class="display-flex">
+          <i class="fab fa-instagram footer-icon background-green color-light-gray"></i>
+          <i class="fab fa-facebook-square footer-icon background-green color-light-gray"></i>
+          <i class="fab fa-youtube footer-icon background-green color-light-gray"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
