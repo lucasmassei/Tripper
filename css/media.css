@@ -1,0 +1,135 @@
+@media (max-width: 1400px) {
+  .section-container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1052px) {
+  .section-container {
+    max-width: 960px;
+  }
+  .section-destination {
+    flex-direction: column;
+  }
+  .section-destination-img {
+    margin-bottom: 50px;
+  }
+  .img-side-destination {
+    position: static;
+  }
+  .img2-destination {
+    position: static;
+    right: 0px;
+    margin: 0px 10px;
+  }
+  .section-events,
+  .section-events-content-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-events-content-item {
+    text-align: center;
+  }
+  .section-events-video {
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 56.25%;
+  }
+  .video-events {
+    height: 100%;
+  }
+  .imgs-section-events {
+    max-width: 248px;
+  }
+  .section-projects {
+    padding: 50px 0px;
+    clip-path: none;
+  }
+  .section-projects-info {
+    width: 100%;
+  }
+  .section-projects-all-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-projects-card {
+    margin-bottom: 20px;
+  }
+ .section-projects-card-info {
+    text-align: center;
+  } 
+  .section-covid-info {
+    width: 100%;
+  }
+  .section-register-info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .section-container {
+    max-width: 875px;
+  }
+}
+
+@media (max-width: 875px) {
+  .section-container {
+    max-width: 768px;
+  }
+  .section-destination-img {
+    justify-content: center;
+    padding: 0px;
+  }
+  .img-side-destination {
+    display: none;
+  }
+  .img2-destination {
+    flex: none;
+    margin: 0px 10px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    max-width: 450px;
+  }
+  .menu-nav {
+    margin-top: 10px;
+  }
+  .main-search {
+    margin-bottom: 20px;
+  }
+  .info {
+    position: static;
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content-info {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .section-container {
+    max-width: 320px;
+  }
+  .section-register-input:nth-child(n + 2) {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section-container {
+    max-width: 300px;
+  }
+}
